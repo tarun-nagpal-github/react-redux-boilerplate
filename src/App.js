@@ -1,10 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-
-
 
 function App() {
   const globalState = useSelector(state => state);
@@ -17,10 +14,10 @@ function App() {
     <div className="App">
       <header className="App-header">
        {/* Action will be triggred on clicked */}
-      <button onClick={getUserData}>Get User data</button> 
+      <button onClick={getUserData} style={{fontSize: '20px'}}>Click here to Get Data</button> 
       &nbsp;&nbsp;&nbsp;
-    <h1>Co Learn - TryOut - Web</h1> 
-    <pre style={{fontSize: 10}}>
+    <h1>Hello Redux</h1> 
+    <pre style={{fontSize: 20}}>
         {JSON.stringify(globalState.userReducer, null, 2)}
     </pre>
       </header>

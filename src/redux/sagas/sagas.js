@@ -2,7 +2,7 @@ import { call, put, takeLatest } from 'redux-saga/effects'
 // import Api from '...'
 const getRecords = (uid = null) => {
     console.log('Get Records');
-    const results =  fetch('https://demo2725878.mockable.io/')
+    const results =  fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then(response => response.json()); 
     return results;
 }
