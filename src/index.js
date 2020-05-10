@@ -17,9 +17,8 @@ import  rootSaga  from "./redux/sagas/index";
 const sagaMiddleware = createSagaMiddleware();
 const globalReducer = createStore(
   rootReducer,
-  compose( 
-    applyMiddleware(sagaMiddleware, logger)
-  ));
+  applyMiddleware(sagaMiddleware, logger)
+  );
   sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
