@@ -2,7 +2,7 @@ import { call, put, takeLatest } from 'redux-saga/effects'
 // import Api from '...'
 const getRecords = (uid = null) => {
     console.log('Get Records');
-    const results =  fetch('https://jsonplaceholder.typicode.com/todos/1')
+    const results =  fetch('https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699')
     .then(response => response.json()); 
     return results;
 }
