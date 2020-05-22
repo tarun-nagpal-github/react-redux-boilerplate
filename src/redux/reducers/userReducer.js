@@ -7,7 +7,7 @@ switch (action.type) {
      return { ...state, response: action.response, loading: false }
     default:
       return {
-        response: "No Response"
+        response: "Default State"
       };
   }
 }

@@ -8,14 +8,14 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from "react-redux";
 import createSagaMiddleware from 'redux-saga';
 import { createStore, applyMiddleware, compose } from "redux";
+import { logger } from 'redux-logger';
 
 // Custom redux Elements 
 import rootReducer from "./redux/reducers/index";
-import { logger } from 'redux-logger';
 import  rootSaga  from "./redux/sagas/index";
-
 const sagaMiddleware = createSagaMiddleware();
-const globalReducer = createStore(
+
+const globalStore = createStore(
   rootReducer,
   applyMiddleware(sagaMiddleware, logger)
   );
@@ -23,7 +23,7 @@ const globalReducer = createStore(
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={globalReducer}>
+    <Provider store={globalStore}>
        <App />
     </Provider>
   </React.StrictMode>,
