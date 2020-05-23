@@ -3,12 +3,13 @@ import './App.css';
 
 import SearchBar from "./components/SearchBar";
 import SearchReults from "./components/SearchReults";
+import Header from './components/Header';
 
 function App() {
   return (
     
       <div className="App-header">
-        <h1>Search for Books by ISBN</h1>
+        <Header />
         <div class="container">
           <SearchBar />
           <SearchReults />

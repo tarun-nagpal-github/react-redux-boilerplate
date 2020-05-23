@@ -26,7 +26,6 @@ function SearchBar() {
                 <div class="col-auto">
                     <i class="fas fa-search h4 text-body"></i>
                 </div>
-                
                 <div class="col">
                     <input type="text" value={isbnNum} onChange={(e) => setisbnNum(e.target.value)} class="form-control form-control-lg form-control-borderless"  placeholder="Search your book" />
                 </div>
@@ -34,7 +33,6 @@ function SearchBar() {
                 <div class="col-auto">
                     <button onClick={getUserData} class="btn btn-lg btn-success" >Search</button>
                 </div>
-                
             </div>
         </div>
     </div>
