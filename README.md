@@ -4,13 +4,16 @@ Boilerplate for React + Redux
 
 # What is State Mangement 
 
-# What is Redux - https://react-redux.js.org/
+# What is Redux -
+    https://react-redux.js.org/
+    https://en.wikipedia.org/wiki/Redux_(JavaScript_library) 
 
 # Why Redux
 
+  - Provide alternative UIs while reusing most of the business logic. 
   - Redux makes the state predictable.
   - Problem of Prop Drilling
-  - Global State - Makes it easier to implement things like logging changes to the data, or persisting data between page refreshes
+  - Global State 
   - Maintainability
   - Debuggable for days
   - Ease of testing
